@@ -17,7 +17,7 @@ if (cardChoice === "cloze") {
 function acceptBasicCards() {
 	console.log("You will prompted to enter 10 flashcards");
 	var BasicCard = require("./BasicCard");
-	//var newCard = new BasicCard(front, back);
+	// prompt user to enter 10 flashcard questions and answers
 	for (var i = 0; i < 10; i++) { 
 		inquirer.prompt([
 		  {
@@ -47,7 +47,7 @@ function acceptBasicCards() {
 function acceptClozeCards() {
 	console.log("You will prompted to enter 10 Cloze cards");
 	var ClozeCard = require("./ClozeCard");
-	//var newCard = new ClozeCard(text, cloze);
+	// prompt user to enter 10 cloze card questions and cloze text
 	for (var i = 0; i < 10; i++) { 
 		inquirer.prompt([
 		  {
